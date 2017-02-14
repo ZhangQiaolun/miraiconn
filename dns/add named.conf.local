@@ -1,0 +1,10 @@
+// Forward zone
+zone "krizna.com" {
+        type master;
+        file "/etc/bind/db.krizna.com";
+};
+//reverse zone
+zone "6.168.192.in-addr.arpa" {
+        type master;
+        file "/etc/bind/db.192";
+};
